@@ -18,6 +18,7 @@ Here are some of the questions this project aims to analyze COVID-19 data and an
 
 ![dying probability](https://github.com/amithar06/Portfolio-Project/assets/132035144/baadbb3f-467a-4524-bd5c-77019dce4bf0)
 
+<br>
 Shows likelihood of dying if you contract covid in your country
 <br>
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
@@ -37,7 +38,7 @@ order by 1,2
 <br>
 
 ![highest infection rate](https://github.com/amithar06/Portfolio-Project/assets/132035144/50f2abe3-bcc6-452d-bb6c-7d709fb34716)
-
+<br>
 
 Countries with Highest Infection Rate compared to Population
 <br>
@@ -47,3 +48,14 @@ From PortfolioProject..CovidDeaths <br>
 Group by Location, Population <br>
 order by PercentPopulationInfected desc
 
+<br> <br> <br> <br> 
+![most deaths by population](https://github.com/amithar06/Portfolio-Project/assets/132035144/6408de6d-7b2c-490e-a837-11f63620c61e)
+<br>
+Countries with Highest Death Count per Population <br>
+
+Select Location, MAX(cast(Total_deaths as int)) as TotalDeathCount <br>
+From PortfolioProject..CovidDeaths <br>
+--Where location like '%states%' <br>
+Where continent is not null  <br>
+Group by Location <br>
+order by TotalDeathCount desc
