@@ -35,7 +35,9 @@ order by 1,2
 <br>
 <br>
 <br>
-![highest infection rate](https://github.com/amithar06/Portfolio-Project/assets/132035144/bb546123-1fce-4d10-8325-1ca6c47aeda5)
+
+![highest infection rate](https://github.com/amithar06/Portfolio-Project/assets/132035144/50f2abe3-bcc6-452d-bb6c-7d709fb34716)
+
 
 Countries with Highest Infection Rate compared to Population
 <br>
