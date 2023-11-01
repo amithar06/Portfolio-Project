@@ -22,8 +22,11 @@ Shows likelihood of dying if you contract covid in your country
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 <br>
 From PortfolioProject..CovidDeaths
+<br>
 Where location like '%states%'
+<br>
 and continent is not null 
+<br>
 order by 1,2
 <br>
 ![dying probability](https://github.com/amithar06/Portfolio-Project/assets/132035144/baadbb3f-467a-4524-bd5c-77019dce4bf0)
