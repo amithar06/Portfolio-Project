@@ -12,7 +12,7 @@ Here are some of the questions this project aims to analyze COVID-19 data and an
 - What percentage of the population in each country has received at least one COVID-19 vaccine dose? 
 <br>
 <br>
-## When executing the provided SQL queries, you can expect the following results:
+## When executing the provided SQL queries you can expect the following results:-
 <br>
 <br>
 
