@@ -58,4 +58,19 @@ From PortfolioProject..CovidDeaths <br>
 --Where location like '%states%' <br>
 Where continent is not null  <br>
 Group by Location <br>
-order by TotalDeathCount desc
+order by TotalDeathCount desc 
+<br> <br> <br> <br> 
+![recieved at least one Covid Vaccine](https://github.com/amithar06/Portfolio-Project/assets/132035144/bdb26cc0-2fd6-48fe-8ae0-50471fef6e7f)
+<br> 
+Shows Percentage of Population that has recieved at least one Covid Vaccine
+
+Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
+, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100 <br> 
+From PortfolioProject..CovidDeaths dea <br> 
+Join PortfolioProject..CovidVaccinations vac <br> 
+	On dea.location = vac.location <br> 
+	and dea.date = vac.date <br> 
+where dea.continent is not null <br>  
+order by 2,3 
+
