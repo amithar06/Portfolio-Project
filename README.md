@@ -31,3 +31,13 @@ order by 1,2
 <br>
 ![dying probability](https://github.com/amithar06/Portfolio-Project/assets/132035144/baadbb3f-467a-4524-bd5c-77019dce4bf0)
 
+<br>
+<br>
+<br>
+Countries with Highest Infection Rate compared to Population
+<br>
+Select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected <br>
+From PortfolioProject..CovidDeaths <br>
+--Where location like '%states%' <br>
+Group by Location, Population <br>
+order by PercentPopulationInfected desc
