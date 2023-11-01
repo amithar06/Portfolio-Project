@@ -11,14 +11,18 @@ Here are some of the questions this project aims to analyze COVID-19 data and an
 - Which countries have seen the most COVID-19 deaths adjusted for population size? 
 - What percentage of the population in each country has received at least one COVID-19 vaccine dose? 
 <br>
-**When executing the provided SQL queries, you can expect the following results:-**
+<br>
+__When executing the provided SQL queries, you can expect the following results:__
+<br>
+<br>
 
 
 Shows likelihood of dying if you contract covid in your country
-
+<br>
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 From PortfolioProject..CovidDeaths
 Where location like '%states%'
 and continent is not null 
 order by 1,2
-output screenshots/dying probability.png
+<br>
+https://github.com/amithar06/Portfolio-Project/blob/main/output%20screenshots/dying%20probability.png
