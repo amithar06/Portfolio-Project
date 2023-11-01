@@ -12,7 +12,7 @@ Here are some of the questions this project aims to analyze COVID-19 data and an
 - What percentage of the population in each country has received at least one COVID-19 vaccine dose? 
 <br>
 <br>
-__When executing the provided SQL queries, you can expect the following results:__
+## When executing the provided SQL queries, you can expect the following results:
 <br>
 <br>
 
@@ -20,9 +20,11 @@ __When executing the provided SQL queries, you can expect the following results:
 Shows likelihood of dying if you contract covid in your country
 <br>
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+<br>
 From PortfolioProject..CovidDeaths
 Where location like '%states%'
 and continent is not null 
 order by 1,2
 <br>
-https://github.com/amithar06/Portfolio-Project/blob/main/output%20screenshots/dying%20probability.png
+![dying probability](https://github.com/amithar06/Portfolio-Project/assets/132035144/baadbb3f-467a-4524-bd5c-77019dce4bf0)
+
